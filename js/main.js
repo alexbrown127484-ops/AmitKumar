@@ -1,5 +1,5 @@
 /* =====================================================
-   TOKVERSE – Main JavaScript
+Amit – Main JavaScript
    ===================================================== */
 
 // ---- HEADER SCROLL ----
@@ -201,7 +201,7 @@ if (contactForm) {
     const brandVal = (document.getElementById('brand').value || '').trim();
     const subjectEl = document.getElementById('fs_subject');
     if (subjectEl && brandVal) {
-      subjectEl.value = `New Tokverse Inquiry \u2013 ${brandVal}`;
+      subjectEl.value = `New Amit Inquiry \u2013 ${brandVal}`;
     }
 
     // Step 3 — show loading state; @formspree/ajax takes over from here.
