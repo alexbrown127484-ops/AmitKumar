@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Tokverse – Book Your Free Strategy Call</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">▶</span>
+        <span class="logo-text">Tokverse</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="nav-link">TV Subscription Studios <span>▾</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">TikTok Shop</a></li>
+            <li><a href="#">Content Creation</a></li>
+            <li><a href="#">Brand Strategy</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="nav-link">Case Studies <span>▾</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Success Stories</a></li>
+            <li><a href="#">Client Results</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary">Get Started</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">LET'S TALK</p>
+      <h1>Book Your Free<br/><span class="gradient-text">Strategy Session</span></h1>
+      <p class="page-hero-sub">Tell us about your brand and we'll show you exactly how we'd scale your TikTok Shop. No fluff, no hard sell — just a clear plan.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section section">
+    <div class="container contact-inner">
+
+      <!-- FORM -->
+      <div class="contact-form-wrapper">
+      <div class="formspree-notice" id="formspreeNotice">
+          <span class="notice-icon">⚙️</span>
+          <div>
+            <strong>One-time setup required:</strong> This form sends to your email via Formspree.
+            Follow the 3 steps in the guide below to activate it, then remove this banner.
+          </div>
+          <button onclick="document.getElementById('formspreeNotice').style.display='none'" class="notice-close" aria-label="Dismiss">✕</button>
+        </div>
+        <h2>Send Us a Message</h2>
+        <p class="form-sub">Fill out the form and we'll get back to you within 24 hours.</p>
+        <!-- Global Formspree error banner -->
+        <div data-fs-error class="fs-global-error" style="display:none;"></div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <!-- Hidden Formspree special fields -->
+          <input type="hidden" name="_subject" id="fs_subject" value="New Tokverse Inquiry" />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name <span class="required">*</span></label>
+              <input type="text" id="firstName" name="firstName" placeholder="John" required data-fs-field />
+              <span class="field-error" id="firstNameError" data-fs-error="firstName"></span>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name <span class="required">*</span></label>
+              <input type="text" id="lastName" name="lastName" placeholder="Doe" required data-fs-field />
+              <span class="field-error" id="lastNameError" data-fs-error="lastName"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="john@yourbrand.com" required data-fs-field />
+            <span class="field-error" id="emailError" data-fs-error="email"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" data-fs-field />
+          </div>
+          <div class="form-group">
+            <label for="brand">Brand / Company Name <span class="required">*</span></label>
+            <input type="text" id="brand" name="brand" placeholder="Your Brand Name" required data-fs-field />
+            <span class="field-error" id="brandError" data-fs-error="brand"></span>
+          </div>
+          <div class="form-group">
+            <label for="website">Website URL</label>
+            <input type="url" id="website" name="website" placeholder="https://yourbrand.com" data-fs-field />
+          </div>
+          <div class="form-group">
+            <label for="monthlyRevenue">Current Monthly Revenue <span class="required">*</span></label>
+            <select id="monthlyRevenue" name="monthlyRevenue" required data-fs-field>
+              <option value="" disabled selected>Select your range</option>
+              <option value="0-10k">$0 – $10K/month</option>
+              <option value="10k-50k">$10K – $50K/month</option>
+              <option value="50k-100k">$50K – $100K/month</option>
+              <option value="100k-500k">$100K – $500K/month</option>
+              <option value="500k+">$500K+/month</option>
+            </select>
+            <span class="field-error" id="monthlyRevenueError" data-fs-error="monthlyRevenue"></span>
+          </div>
+          <div class="form-group">
+            <label for="service">Service You're Interested In <span class="required">*</span></label>
+            <select id="service" name="service" required data-fs-field>
+              <option value="" disabled selected>Select a service</option>
+              <option value="starter">Starter Pack – $299/mo</option>
+              <option value="growth">Growth Plan – $499/mo</option>
+              <option value="dominator">Dominator Plan – $999/mo</option>
+              <option value="custom">Custom / Enterprise</option>
+              <option value="unsure">Not sure yet</option>
+            </select>
+            <span class="field-error" id="serviceError" data-fs-error="service"></span>
+          </div>
+          <div class="form-group">
+            <label for="tiktok">TikTok Handle (if you have one)</label>
+            <input type="text" id="tiktok" name="tiktok" placeholder="@yourbrand" data-fs-field />
+          </div>
+          <div class="form-group">
+            <label for="message">Tell Us About Your Brand <span class="required">*</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="What products do you sell? What's your goal on TikTok Shop? Any challenges you're facing?" required data-fs-field></textarea>
+            <span class="field-error" id="messageError" data-fs-error="message"></span>
+          </div>
+          <div class="form-group form-check">
+            <label class="checkbox-label">
+              <input type="checkbox" id="agree" name="agree" required />
+              <span class="checkmark"></span>
+              I agree to receive communications from Tokverse and understand I can unsubscribe at any time.
+            </label>
+            <span class="field-error" id="agreeError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitBtn" data-fs-submit-btn>
+            <span id="btnText">Submit & Book My Call →</span>
+            <span id="btnLoading" style="display:none;">Sending...</span>
+          </button>
+        </form>
+
+        <!-- SUCCESS MESSAGE -->
+        <div class="form-success" id="formSuccess" style="display:none;">
+          <div class="success-icon">✓</div>
+          <h3>Message Sent!</h3>
+          <p>Thanks for reaching out. Our team will review your submission and reach out within 24 hours to schedule your strategy call.</p>
+          <a href="index.html" class="btn btn-primary">Back to Home</a>
+        </div>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class="contact-info">
+        <div class="contact-info-card">
+          <h3>Why Book a Call?</h3>
+          <ul class="contact-benefits">
+            <li>
+              <span class="benefit-icon">🎯</span>
+              <div>
+                <strong>Custom TikTok Shop Audit</strong>
+                <p>We'll review your brand and identify the top 3 opportunities on TikTok Shop.</p>
+              </div>
+            </li>
+            <li>
+              <span class="benefit-icon">📊</span>
+              <div>
+                <strong>Revenue Projection</strong>
+                <p>We'll give you a realistic 90-day revenue forecast based on your category and budget.</p>
+              </div>
+            </li>
+            <li>
+              <span class="benefit-icon">🚀</span>
+              <div>
+                <strong>Clear Action Plan</strong>
+                <p>You'll leave with a step-by-step roadmap — whether you work with us or not.</p>
+              </div>
+            </li>
+            <li>
+              <span class="benefit-icon">💬</span>
+              <div>
+                <strong>Zero Pressure</strong>
+                <p>This is a strategy session, not a sales pitch. We only work with brands we can genuinely help.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-details-card">
+          <h3>Reach Us Directly</h3>
+          <div class="contact-detail">
+            <span class="detail-icon">📧</span>
+            <div>
+              <div class="detail-label">Email</div>
+              <a href="mailto:hello@tokverse.com">hello@tokverse.com</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="detail-icon">📱</span>
+            <div>
+              <div class="detail-label">TikTok</div>
+              <a href="#">@tokverse</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="detail-icon">💼</span>
+            <div>
+              <div class="detail-label">LinkedIn</div>
+              <a href="#">Tokverse Agency</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="detail-icon">⏰</span>
+            <div>
+              <div class="detail-label">Response Time</div>
+              <span>Within 24 hours, weekdays</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="trust-badges">
+          <div class="trust-badge">
+            <span class="tb-num">40+</span>
+            <span class="tb-label">Brands Scaled</span>
+          </div>
+          <div class="trust-badge">
+            <span class="tb-num">$8M+</span>
+            <span class="tb-label">Revenue Generated</span>
+          </div>
+          <div class="trust-badge">
+            <span class="tb-num">4.7★</span>
+            <span class="tb-label">Client Rating</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">▶</span>
+          <span class="logo-text">Tokverse</span>
+        </a>
+        <p>We build, manage, and scale 7-figure TikTok Shops for consumer brands worldwide.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">TK</a>
+          <a href="#" class="social-link">IG</a>
+          <a href="#" class="social-link">LI</a>
+          <a href="#" class="social-link">TW</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Shop Optimization</a></li>
+          <li><a href="#">Content Creation</a></li>
+          <li><a href="#">DSP Advertising</a></li>
+          <li><a href="#">New Seller Setup</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Case Studies</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Tokverse. All rights reserved.</p>
+        <p>Built to scale your TikTok Shop.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <!-- Formspree Ajax CDN -->
+  <script>
+    window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+    formspree('initForm', { formElement: '#contactForm', formId: 'mdaradow' });
+  </script>
+  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+</body>
+</html>
